@@ -1,0 +1,102 @@
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public enum Eventtype
+{
+    Fadeout,
+    Fadein,
+    Wait,
+    ChangeMainImage,
+    ChangeMainText,
+    Activatebutton,
+    Deactivatebutton,
+    PlayBgm,
+    PlayVFX,
+    StopBgm,
+    StopVFX
+}
+[System.Serializable]
+public class Eventt
+{
+    public Eventtype type;
+    public float Intvalue;
+    public Button button;
+}
+[System.Serializable]
+public class Eventtt
+{
+    public string eventitle;
+    public Eventt[] eventlist;
+}
+public class Event : MonoBehaviour
+{
+    public Data data;
+    public AudioSource BGM;
+    public AudioSource VFX;
+    public Image MainImagepannel;
+    public Image FadeOutPannel;
+    public TextMeshProUGUI MainText;
+    [Space(50)]
+    public Eventtt[] events;
+    // Start is called before the first frame update
+    public void startcor(int eventidx)
+    {
+        StartCoroutine(eventcor(eventidx));
+    }
+
+    IEnumerator eventcor(int eventidx)
+    {
+        for (int i = 0; i < events[eventidx].eventlist.Length; i++)
+        {
+            switch (events[eventidx].eventlist[i].type)
+            {
+                case Eventtype.Wait:
+                    yield return new WaitForSeconds(events[eventidx].eventlist[i].Intvalue);
+                    break;
+                case Eventtype.Fadeout:
+                    while(FadeOutPannel.color.a < 1)
+                    {
+                        FadeOutPannel.color += new Color(0, 0, 0, events[eventidx].eventlist[i].Intvalue);
+                        yield return null;
+                    }
+                    break;
+                case Eventtype.Fadein:
+                    while (FadeOutPannel.color.a > 0)
+                    {
+                        FadeOutPannel.color -= new Color(0, 0, 0, events[eventidx].eventlist[i].Intvalue);
+                        yield return null;
+                    }
+                    break;
+                case Eventtype.ChangeMainImage:
+                    MainImagepannel.sprite = data.Images[(int)events[eventidx].eventlist[i].Intvalue];
+                    break;
+                case Eventtype.ChangeMainText:
+                    MainText.text = data.Texts[(int)events[eventidx].eventlist[i].Intvalue];
+                    break;
+                case Eventtype.Activatebutton:
+                    events[eventidx].eventlist[i].button.interactable = true;
+                    break;
+                case Eventtype.Deactivatebutton:
+                    events[eventidx].eventlist[i].button.interactable = false;
+                    break;
+                case Eventtype.PlayBgm:
+                    BGM.clip = data.Audio[(int)events[eventidx].eventlist[i].Intvalue];
+                    BGM.Play();
+                    break;
+                case Eventtype.PlayVFX:
+                    VFX.clip = data.Audio[(int)events[eventidx].eventlist[i].Intvalue];
+                    VFX.Play();
+                    break;
+                case Eventtype.StopVFX:
+                    VFX.Stop();
+                    break;
+                case Eventtype.StopBgm:
+                    BGM.Stop();
+                    break;
+            }
+        }
+    }
+}
