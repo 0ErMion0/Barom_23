@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.UI;
+using System;
+using Mono.Cecil.Rocks;
 
 public enum Eventtype
 {
@@ -11,19 +14,34 @@ public enum Eventtype
     Wait,
     ChangeMainImage,
     ChangeMainText,
-    Activatebutton,
-    Deactivatebutton,
+    ChangeTextColor,
+    ChangeOtherText,
+    ActivateButton,
+    ActivateObject,
+    DeactivateButton,
+    DisableObject,
     PlayBgm,
     PlayVFX,
     StopBgm,
-    StopVFX
+    StopVFX,
+    SetChapter,
+    Fished,
+    EnableFishList,
+    VIberate,
+    EndApp
+
 }
 [System.Serializable]
 public class Eventt
 {
     public Eventtype type;
     public float Intvalue;
-    public Button button;
+
+    public bool open;
+    [DrawIf("open", true)] public Button button;
+    [DrawIf("open", true)] public GameObject Object;
+    [DrawIf("open", true)] public Color Textcolor;
+    [DrawIf("open", true)] public string OtherTextString;
 }
 [System.Serializable]
 public class Eventtt
@@ -76,10 +94,10 @@ public class Event : MonoBehaviour
                 case Eventtype.ChangeMainText:
                     MainText.text = data.Texts[(int)events[eventidx].eventlist[i].Intvalue];
                     break;
-                case Eventtype.Activatebutton:
+                case Eventtype.ActivateButton:
                     events[eventidx].eventlist[i].button.interactable = true;
                     break;
-                case Eventtype.Deactivatebutton:
+                case Eventtype.DeactivateButton:
                     events[eventidx].eventlist[i].button.interactable = false;
                     break;
                 case Eventtype.PlayBgm:
@@ -95,6 +113,33 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.StopBgm:
                     BGM.Stop();
+                    break;
+                case Eventtype.ActivateObject:
+                    events[eventidx].eventlist[i].Object.SetActive(true);
+                    break;
+                case Eventtype.DisableObject:
+                    events[eventidx].eventlist[i].Object.SetActive(false);
+                    break;
+                case Eventtype.SetChapter:
+                    data.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
+                    break;
+                case Eventtype.EnableFishList:
+                    data.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
+                    break;
+                case Eventtype.Fished:
+                    data.Fished++;
+                    break;
+                case Eventtype.EndApp:
+                    Application.Quit();
+                    break;
+                case Eventtype.VIberate:
+                    Handheld.Vibrate();
+                    break;
+                case Eventtype.ChangeOtherText:
+                    events[eventidx].eventlist[i].Object.GetComponent<TextMeshProUGUI>().text = events[eventidx].eventlist[i].OtherTextString;
+                    break;
+                case Eventtype.ChangeTextColor:
+                    MainText.color = events[eventidx].eventlist[i].Textcolor;
                     break;
             }
         }

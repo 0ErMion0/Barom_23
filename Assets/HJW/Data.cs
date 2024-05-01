@@ -10,4 +10,5 @@ public class Data : MonoBehaviour
     public AudioClip[] Audio;
     public bool[] Fishlist;
     public int Fished;
+    public int Chapter;
 }
