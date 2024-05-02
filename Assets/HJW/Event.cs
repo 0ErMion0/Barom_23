@@ -13,6 +13,7 @@ public enum Eventtype
     Fadein,
     Wait,
     ChangeMainImage,
+    ChangeOtherImage,
     ChangeMainText,
     ChangeTextColor,
     ChangeOtherText,
@@ -137,6 +138,9 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.ChangeOtherText:
                     events[eventidx].eventlist[i].Object.GetComponent<TextMeshProUGUI>().text = events[eventidx].eventlist[i].OtherTextString;
+                    break;
+                case Eventtype.ChangeOtherImage:
+                    events[eventidx].eventlist[i].Object.GetComponent<Image>().sprite = data.Images[(int)events[eventidx].eventlist[i].Intvalue];
                     break;
                 case Eventtype.ChangeTextColor:
                     MainText.color = events[eventidx].eventlist[i].Textcolor;
