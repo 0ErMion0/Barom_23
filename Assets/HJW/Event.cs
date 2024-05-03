@@ -1,11 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.UI;
-using System;
-using Mono.Cecil.Rocks;
 
 public enum Eventtype
 {
@@ -43,6 +39,8 @@ public class Eventt
     [DrawIf("open", true)] public GameObject Object;
     [DrawIf("open", true)] public Color Textcolor;
     [DrawIf("open", true)] public string OtherTextString;
+
+    
 }
 [System.Serializable]
 public class Eventtt
@@ -60,7 +58,12 @@ public class Event : MonoBehaviour
     public TextMeshProUGUI MainText;
     [Space(50)]
     public Eventtt[] events;
+    public static Event instance;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        instance = this;
+    }
     public void startcor(int eventidx)
     {
         StartCoroutine(eventcor(eventidx));
