@@ -2428,7 +2428,7 @@ MonoBehaviour:
       OtherTextString: 
     - type: 11
       Intvalue: 0
-      open: 1
+      open: 0
       button: {fileID: 1976958471}
       Object: {fileID: 645956886}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
