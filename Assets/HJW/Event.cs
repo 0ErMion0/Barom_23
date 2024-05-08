@@ -25,7 +25,9 @@ public enum Eventtype
     Fished,
     EnableFishList,
     VIberate,
-    EndApp
+    EndApp,
+    AudioRepeat,
+    AudioNotRepeat
 
 }
 [System.Serializable]
@@ -147,6 +149,12 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.ChangeTextColor:
                     MainText.color = events[eventidx].eventlist[i].Textcolor;
+                    break;
+                case Eventtype.AudioRepeat:
+                    VFX.loop = true;
+                    break;
+                case Eventtype.AudioNotRepeat:
+                    VFX.loop = false;
                     break;
             }
         }
