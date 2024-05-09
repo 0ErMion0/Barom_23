@@ -661,18 +661,18 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 9
-      Intvalue: 2
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1196012277}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 8
       Intvalue: 2
       open: 1
       button: {fileID: 1196012281}
       Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 9
+      Intvalue: 2
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1196012277}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
   - eventitle: Chapter3_3
@@ -807,7 +807,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<Chapter 3>\n\uD68C\uC0AC"
+  m_Text: "<Chapter 4>\n\uC810\uC2EC\uC2DC\uAC04"
 --- !u!222 &387637279
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1531,9 +1531,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Images:
-  - {fileID: 21300000, guid: 8d844ee97e9db3f4ca96ef28e5e0f688, type: 3}
-  - {fileID: 21300000, guid: c0629d6eedf1b8d42820969bca9ade6b, type: 3}
-  - {fileID: 21300000, guid: cccf8ba167271cd4db4246ba2f4f2149, type: 3}
+  - {fileID: 21300000, guid: 9ca3abff55ed279449aea8b5d9fdd0de, type: 3}
+  - {fileID: 21300000, guid: fb519b4fd75ac8c4aae11362b5703f45, type: 3}
+  - {fileID: 21300000, guid: afa009a64a907414e9ba9c6f9f56e7cb, type: 3}
   - {fileID: 21300000, guid: a4cda216309fc724ea5c4d29378c05db, type: 3}
   Texts:
   - ... It's been refunded?
