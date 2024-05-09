@@ -1531,10 +1531,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Images:
-  - {fileID: 21300000, guid: 9ca3abff55ed279449aea8b5d9fdd0de, type: 3}
-  - {fileID: 21300000, guid: fb519b4fd75ac8c4aae11362b5703f45, type: 3}
-  - {fileID: 21300000, guid: afa009a64a907414e9ba9c6f9f56e7cb, type: 3}
-  - {fileID: 21300000, guid: a4cda216309fc724ea5c4d29378c05db, type: 3}
+  - {fileID: 21300000, guid: 28a7a1177e4f73b45973b19ba5afc765, type: 3}
+  - {fileID: 21300000, guid: 03816f50a1bd03546bfd7819cda3bc5b, type: 3}
+  - {fileID: 21300000, guid: aa21ee7949abc244fae79fde0fd3bbd4, type: 3}
+  - {fileID: 21300000, guid: aa21ee7949abc244fae79fde0fd3bbd4, type: 3}
   Texts:
   - ... It's been refunded?
   - I'll buy this.
@@ -2541,7 +2541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8d844ee97e9db3f4ca96ef28e5e0f688, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 531ee8fb7581ba449a31b59458d43d0d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
