@@ -27,7 +27,8 @@ public enum Eventtype
     VIberate,
     EndApp,
     AudioRepeat,
-    AudioNotRepeat
+    AudioNotRepeat,
+    ShakeDisplay
 
 }
 [System.Serializable]
@@ -58,6 +59,7 @@ public class Event : MonoBehaviour
     public Image MainImagepannel;
     public Image FadeOutPannel;
     public TextMeshProUGUI MainText;
+    public Animation shakeanim;
     [Space(50)]
     public Eventtt[] events;
     public static Event instance;
@@ -155,6 +157,9 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.AudioNotRepeat:
                     VFX.loop = false;
+                    break;
+                case Eventtype.ShakeDisplay:
+                    shakeanim.Play();
                     break;
             }
         }
