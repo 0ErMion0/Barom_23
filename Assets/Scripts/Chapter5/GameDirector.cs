@@ -14,10 +14,12 @@ public class GameDirector : MonoBehaviour
     // Á¡¼ö
     private int score = 0;
     public TextMeshProUGUI scoreText;
+    int clearScore = 5;
 
     // ½Ã°£
     public GameObject timeGauge;
     //float maxTimeGauge = 1.0f;
+    float fillAmountCheck = 1;
     float time = 0f;
 
     public GameObject gameUICanvas;
@@ -59,9 +61,9 @@ public class GameDirector : MonoBehaviour
     public void ItemCount()
     {
         score++;
-        scoreText.text = score + " / 10";
+        scoreText.text = score + " / " + clearScore;
 
-        if (score >= 10)
+        if (score >= clearScore)
             Clear();
     }
 
@@ -73,11 +75,10 @@ public class GameDirector : MonoBehaviour
     //}
     public void TimeCtrl()
     {
-        time = 0;
         time += Time.deltaTime;
-        float fillAmount = (15 - time) / 15; // ÃÑ 15ÃÊ (15-deltatime)/15
-        this.timeGauge.GetComponent<Image>().fillAmount = fillAmount;
-        if(fillAmount <= 0 && hp >= 1)
+        fillAmountCheck = (15 - time) / 15; // ÃÑ 15ÃÊ (15-deltatime)/15
+        this.timeGauge.GetComponent<Image>().fillAmount = fillAmountCheck;
+        if(fillAmountCheck <= 0 && hp >= 1)
         {
             //Debug.Log("¼º°ø");
             Clear();
@@ -112,9 +113,10 @@ public class GameDirector : MonoBehaviour
     private void ResetData()
     {
         score = 0;
-        scoreText.text = "0 / 10";
+        scoreText.text = "0 / " +  clearScore;
 
         time = 0;
+        fillAmountCheck = 1;
     }
 
 }

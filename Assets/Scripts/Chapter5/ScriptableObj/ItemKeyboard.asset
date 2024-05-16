@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Keyboard
   itemType: 1
   itemPrefeb: {fileID: 7733591935350652992, guid: c9f7491e48ed22b46a680f3c422a3b29, type: 3}
-  speed: 0.025
+  speed: 2.5

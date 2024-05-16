@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Computer
   itemType: 1
   itemPrefeb: {fileID: 8987727503420474440, guid: fd3d94a9da81c8d42a92240f30b11fdb, type: 3}
-  speed: 0.025
+  speed: 2.5

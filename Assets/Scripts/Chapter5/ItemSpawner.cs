@@ -18,7 +18,7 @@ public class ItemSpawner : MonoBehaviour
     };
 
     public Vector3[] genPoint; // 생성 포인트
-    float span = 0.7f; // 아이템 호출 간격
+    float span = 1f; // 아이템 호출 간격
     float delta = 0; // 현재 시간
 
     public GameObject items;

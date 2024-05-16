@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Sushi
   itemType: 0
   itemPrefeb: {fileID: 6762963554015989945, guid: 5c7edf6dd4c05a04997930f7f77e1f54, type: 3}
-  speed: 0.035
+  speed: 3
