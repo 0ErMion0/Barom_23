@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Eventtype
@@ -27,7 +28,9 @@ public enum Eventtype
     VIberate,
     EndApp,
     AudioRepeat,
-    AudioNotRepeat
+    AudioNotRepeat,
+    ShakeDisplay,
+    ChangeScene
 
 }
 [System.Serializable]
@@ -58,6 +61,7 @@ public class Event : MonoBehaviour
     public Image MainImagepannel;
     public Image FadeOutPannel;
     public TextMeshProUGUI MainText;
+    public Animation shakeanim;
     [Space(50)]
     public Eventtt[] events;
     public static Event instance;
@@ -155,6 +159,12 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.AudioNotRepeat:
                     VFX.loop = false;
+                    break;
+                case Eventtype.ShakeDisplay:
+                    shakeanim.Play();
+                    break;
+                case Eventtype.ChangeScene:
+                    SceneManager.LoadScene(events[eventidx].eventlist[i].OtherTextString);
                     break;
             }
         }
