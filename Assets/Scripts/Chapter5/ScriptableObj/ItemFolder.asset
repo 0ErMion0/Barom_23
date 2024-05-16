@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Folder
   itemType: 1
   itemPrefeb: {fileID: 7227016373449303515, guid: 8e861172d5013824c95f61c03bb974c5, type: 3}
-  speed: 0.03
+  speed: 0.025

@@ -21,7 +21,10 @@ public class ItemCtrl : MonoBehaviour
 	ItemData itemData;
 	public ItemData ItemData { set { itemData = value; } }
 
-    private void Start()
+	GameObject director;
+
+
+	private void Start()
     {
 		//Debug.Log(itemData.ItemType);
 		//Debug.Log(itemData.Speed);
@@ -29,6 +32,8 @@ public class ItemCtrl : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag("Player");
 		fallSpeed = itemData.Speed;
 
+
+		director = GameObject.Find("GameDirector");
 	}
 
     void Update()
@@ -55,16 +60,17 @@ public class ItemCtrl : MonoBehaviour
 			// 충돌 판정
 			Destroy(gameObject);
 
-
             // 충돌 시 n -> 생명 하나 감소
-   //         if (ItemDatas.itemType == 0) //n
-   //         {
-   //             // 생명 감소 함수 호출
-   //         }
-			//else // 충돌 시 p -> 10개까지 채우면 클리어
-			//{
-			//	// ++
-   //         }
+            if (itemData.itemType == 0) //n
+            {
+				// 생명 감소 함수 호출
+				director.GetComponent<GameDirector>().DecreaseHp();
+            }
+            else // 충돌 시 p -> 10개까지 채우면 클리어
+            {
+				// 아이템 점수 컨트롤 호출
+				director.GetComponent<GameDirector>().ItemCount();
+			}
 		}
 	}
 }

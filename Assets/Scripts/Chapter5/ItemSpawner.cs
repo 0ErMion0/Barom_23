@@ -18,8 +18,10 @@ public class ItemSpawner : MonoBehaviour
     };
 
     public Vector3[] genPoint; // 생성 포인트
-    float span = 1.0f; // 아이템 호출 간격
+    float span = 0.7f; // 아이템 호출 간격
     float delta = 0; // 현재 시간
+
+    public GameObject items;
 
     private void Awake()
     {
@@ -60,12 +62,13 @@ public class ItemSpawner : MonoBehaviour
     // x축: -1.3~1.3 사이, y축: 6 에서 generate
     // 아이템이 겹치지 않도록 해야되나? -> 그럼 각 포인트를 찍어야 함
     // -1.3, 0, 1.3
-    // 한번에 5개만 화면에 존재할 수 있도록?
+    // 한번에 5개만 화면에 존재할 수 있도록? x
     public void SpawnItems(int posNum)
     {
         ItemData randonItem = ItemList[Random.Range(0, ItemList.Count)];
         GameObject go = Instantiate(randonItem.itemPrefeb) as GameObject;
         go.transform.position = genPoint[posNum];
+        go.transform.parent = items.transform;
 
 
         //for (int i = 0; i < ItemDatas.Count; i++)
