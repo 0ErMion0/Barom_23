@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Knife
   itemType: 0
   itemPrefeb: {fileID: 101582493596605922, guid: 99cfacb5d02b87342bb6bdd1b171d9f5, type: 3}
-  speed: 0.04
+  speed: 3

@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Can
   itemType: 0
   itemPrefeb: {fileID: 4225242198861107323, guid: 26e8595c426e6c84caef1391718ca644, type: 3}
-  speed: 0.04
+  speed: 3
