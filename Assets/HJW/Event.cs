@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Eventtype
@@ -28,7 +29,8 @@ public enum Eventtype
     EndApp,
     AudioRepeat,
     AudioNotRepeat,
-    ShakeDisplay
+    ShakeDisplay,
+    ChangeScene
 
 }
 [System.Serializable]
@@ -160,6 +162,9 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.ShakeDisplay:
                     shakeanim.Play();
+                    break;
+                case Eventtype.ChangeScene:
+                    SceneManager.LoadScene(events[eventidx].eventlist[i].OtherTextString);
                     break;
             }
         }

@@ -3809,7 +3809,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1923701200}
   m_OnClick:
     m_PersistentCalls:
@@ -4938,6 +4938,20 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 11
+      Intvalue: 6
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 917033078}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 11
+      Intvalue: 6
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 93973766}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 16
       Intvalue: 3
       open: 0
@@ -4952,6 +4966,20 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 2
+      Intvalue: 2
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Chapter3
+    - type: 24
+      Intvalue: 2
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Chapter3
 --- !u!4 &1994502202
 Transform:
   m_ObjectHideFlags: 0
