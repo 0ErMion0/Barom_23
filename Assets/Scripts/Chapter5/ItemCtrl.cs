@@ -17,6 +17,7 @@ public class ItemCtrl : MonoBehaviour
 	[SerializeField]
 	private float fallSpeed;
 	// 그 아이템마다 스피드 다르게 하면 좋을듯. n이 더 빠르게 떨어지게.
+	private float minPos = -2.88f;
 
 	[SerializeField]
 	ItemData itemData;
@@ -40,7 +41,7 @@ public class ItemCtrl : MonoBehaviour
 		transform.Translate(0, -fallSpeed * Time.deltaTime, 0, 0);
 
 		// 화면 밖으로 나가면 오브젝트 소멸
-		if (transform.position.y < -3.5f)
+		if (transform.position.y < minPos)
 		{
 			Destroy(gameObject);
 		}

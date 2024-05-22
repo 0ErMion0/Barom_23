@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class GameDirector : MonoBehaviour
 {
+    // 이벤트
+    public UnityEvent onGameStart;
+
     // 생명
     public GameObject[] hearts;
     private int hp = 3;
@@ -37,6 +41,7 @@ public class GameDirector : MonoBehaviour
     private void Start()
     {
         //StartCoroutine(TimeCtrl());
+        onGameStart.Invoke();
     }
 
     private void Update()

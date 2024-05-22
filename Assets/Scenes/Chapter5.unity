@@ -831,8 +831,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 964977786}
-  - {fileID: 1490923340}
   - {fileID: 1622422547}
+  - {fileID: 1490923340}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1020,6 +1020,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c274c63ce8a23d149a861b0130815a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onGameStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1574962887}
+        m_TargetAssemblyTypeName: Event, Assembly-CSharp
+        m_MethodName: startcor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   hearts:
   - {fileID: 249902193}
   - {fileID: 1818975948}
@@ -3344,7 +3359,7 @@ RectTransform:
   - {fileID: 240150548}
   - {fileID: 1660631628}
   m_Father: {fileID: 445361584}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3512,32 +3527,11 @@ MonoBehaviour:
   events:
   - eventitle: Chapter 5
     eventlist:
-    - type: 12
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 0
       Intvalue: 0.05
       open: 0
       button: {fileID: 0}
       Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 1
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 445361580}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 1
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1490923339}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 11
@@ -3561,27 +3555,6 @@ MonoBehaviour:
       Object: {fileID: 422083506}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 11
-      Intvalue: 1
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1092813699}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 1
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1383909619}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 1
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 453779131}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 9
       Intvalue: 0.05
       open: 1
@@ -3589,7 +3562,14 @@ MonoBehaviour:
       Object: {fileID: 414984178}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 1
+    - type: 11
+      Intvalue: 1
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1622422546}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 0
       Intvalue: 0.05
       open: 0
       button: {fileID: 0}
@@ -3613,7 +3593,7 @@ MonoBehaviour:
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 13
-      Intvalue: 1
+      Intvalue: 0
       open: 1
       button: {fileID: 0}
       Object: {fileID: 0}
@@ -3640,11 +3620,83 @@ MonoBehaviour:
       Object: {fileID: 453779131}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 22
-      Intvalue: 1
+    - type: 24
+      Intvalue: 4
       open: 1
       button: {fileID: 0}
       Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Chapter6
+  - eventitle: GameStart
+    eventlist:
+    - type: 13
+      Intvalue: 0
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 9
+      Intvalue: 4
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1622422546}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 0
+      Intvalue: 0.05
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1490923339}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 9
+      Intvalue: 0.05
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 445361580}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 9
+      Intvalue: 0.05
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1490923339}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 11
+      Intvalue: 1
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 964977785}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 11
+      Intvalue: 4
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 422083506}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 11
+      Intvalue: 4
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 414984178}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 11
+      Intvalue: 4
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1098574562}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 1
+      Intvalue: 4
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 1098574562}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
 --- !u!1 &1622422546
@@ -3678,7 +3730,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 445361584}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
