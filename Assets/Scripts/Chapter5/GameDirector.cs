@@ -17,6 +17,7 @@ public class GameDirector : MonoBehaviour
     int clearScore = 5;
 
     // 시간
+    public bool gameStart = false;
     public GameObject timeGauge;
     //float maxTimeGauge = 1.0f;
     float fillAmountCheck = 1;
@@ -28,8 +29,8 @@ public class GameDirector : MonoBehaviour
     public GameObject dialog;
 
     public TextMeshProUGUI dialogText;
-    private string clearText = "승진에 한 발짝 가까워졌다!";
-    private string failText = "이번에 승진은 글렀네..";
+    private string clearText = "성공!\n승진에 한 발짝 가까워졌다!";
+    private string failText = "실패..\n이번에 승진은 글렀네..";
 
     public GameObject gameObjects;
 
@@ -40,7 +41,13 @@ public class GameDirector : MonoBehaviour
 
     private void Update()
     {
-        TimeCtrl();
+        if(gameStart)
+            TimeCtrl();
+    }
+
+    public void StartGame()
+    {
+        gameStart = true;
     }
 
     // 생명 컨트롤
@@ -117,6 +124,7 @@ public class GameDirector : MonoBehaviour
 
         time = 0;
         fillAmountCheck = 1;
-    }
 
+        gameStart = false;
+    }
 }
