@@ -447,6 +447,8 @@ MonoBehaviour:
   MainImagepannel: {fileID: 1976958469}
   FadeOutPannel: {fileID: 1673065005}
   MainText: {fileID: 1998950006}
+  shakeanim: {fileID: 0}
+  datamgr: {fileID: 0}
   events:
   - eventitle: FullButton_0
     eventlist:
@@ -2330,16 +2332,13 @@ MonoBehaviour:
   - "\uC5B4? \uC774\uAC70 \uB2F9\uC7A5 \uD544\uC694\uD55C \uBB3C\uAC74\uC778\uB370,"
   - "\uAC8C\uB2E4\uAC00 \uB2E4\uC2E0 \uC5C6\uC744 \uAC00\uACA9\uC774\uB2E4."
   - "\uC5F0\uB77D\uD574\uBCF4\uC790."
-  - "\uBC14\uB2E4\uC740\uD589\uC740 \uB4B7\uC790\uB9AC\uAC00 12\uBA74 \uC801\uAE08\uACC4\uC88C\uB77C\uB358\uB370..."
+  - "\uBC14\uB2E4\uC740\uD589\uC740\n\uB4B7\uC790\uB9AC\uAC00 12\uBA74 \uC801\uAE08\uACC4\uC88C\uB77C\uB358\uB370..."
   - "\uC1A1\uAE08 \uD588\uB2E4\uACE0 \uC5F0\uB77D\uD574\uC57C\uACA0\uB2E4."
   - "... \uB098 \uC9C0\uAE08 \uC0AC\uAE30 \uB2F9\uD55C\uAC70\uC57C?"
   - "\uB2E4\uC74C\uC5D0 \uC0AC\uC790."
   Audio:
   - {fileID: 0}
   - {fileID: 0}
-  Fishlist: 0000000000
-  Fished: 0
-  Chapter: 0
 --- !u!4 &1190128284
 Transform:
   m_ObjectHideFlags: 0

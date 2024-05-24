@@ -30,7 +30,10 @@ public enum Eventtype
     AudioRepeat,
     AudioNotRepeat,
     ShakeDisplay,
-    ChangeScene
+    ChangeScene,
+    Savedata,
+    Loaddata,
+    ToResultScene
 
 }
 [System.Serializable]
@@ -62,6 +65,7 @@ public class Event : MonoBehaviour
     public Image FadeOutPannel;
     public TextMeshProUGUI MainText;
     public Animation shakeanim;
+    public FishedDataManager datamgr;
     [Space(50)]
     public Eventtt[] events;
     public static Event instance;
@@ -131,13 +135,13 @@ public class Event : MonoBehaviour
                     events[eventidx].eventlist[i].Object.SetActive(false);
                     break;
                 case Eventtype.SetChapter:
-                    data.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
+                    datamgr.fishedData.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
                     break;
                 case Eventtype.EnableFishList:
-                    data.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
+                    datamgr.fishedData.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
                     break;
                 case Eventtype.Fished:
-                    data.Fished++;
+                    datamgr.fishedData.Fished++;
                     break;
                 case Eventtype.EndApp:
                     Application.Quit();
@@ -165,6 +169,15 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.ChangeScene:
                     SceneManager.LoadScene(events[eventidx].eventlist[i].OtherTextString);
+                    break;
+                case Eventtype.Savedata:
+                    datamgr.SaveData();
+                    break;
+                case Eventtype.Loaddata:
+                    datamgr.LoadData();
+                    break;
+                case Eventtype.ToResultScene:
+                    datamgr.FishedResult();
                     break;
             }
         }
