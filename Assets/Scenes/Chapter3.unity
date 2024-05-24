@@ -447,6 +447,8 @@ MonoBehaviour:
   MainImagepannel: {fileID: 1976958469}
   FadeOutPannel: {fileID: 1673065005}
   MainText: {fileID: 1998950006}
+  shakeanim: {fileID: 0}
+  datamgr: {fileID: 0}
   events:
   - eventitle: FullButton_0
     eventlist:
@@ -745,6 +747,13 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 2
+      Intvalue: 2
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
   - eventitle: SelectButton2_5
     eventlist:
     - type: 11
@@ -810,6 +819,13 @@ MonoBehaviour:
       Object: {fileID: 45105852}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 24
+      Intvalue: 0
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Chapter4_01
 --- !u!4 &280665018
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,9 +1742,6 @@ MonoBehaviour:
   Audio:
   - {fileID: 0}
   - {fileID: 0}
-  Fishlist: 0000000000
-  Fished: 0
-  Chapter: 0
 --- !u!4 &1190128284
 Transform:
   m_ObjectHideFlags: 0

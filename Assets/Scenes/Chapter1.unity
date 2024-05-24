@@ -774,6 +774,53 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &456865952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 456865954}
+  - component: {fileID: 456865955}
+  m_Layer: 0
+  m_Name: Fishdata
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &456865954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456865952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7805202, y: -2.11276, z: 4.8182764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456865955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456865952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6217dca1b42d614fbea168e30f971af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fishlist: 000000000000
+  Fished: 0
+  Chapter: 0
 --- !u!1 &499832237
 GameObject:
   m_ObjectHideFlags: 0
@@ -7374,9 +7421,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cc9701d94c70e52419ea51859039b799, type: 3}
   - {fileID: 8300000, guid: d7254fb118d45a94e9f2f9c8dbee4492, type: 3}
   - {fileID: 8300000, guid: 6947b85d40c97044f9b8b26e22905ca1, type: 3}
-  Fishlist: 0000000000
-  Fished: 0
-  Chapter: 0
 --- !u!4 &1190128284
 Transform:
   m_ObjectHideFlags: 0
@@ -9174,9 +9218,38 @@ MonoBehaviour:
   FadeOutPannel: {fileID: 1673065005}
   MainText: {fileID: 1998950006}
   shakeanim: {fileID: 1463640369}
+  datamgr: {fileID: 456865955}
   events:
   - eventitle: Chapter 1
     eventlist:
+    - type: 25
+      Intvalue: 1
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 2013039739}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 16
+      Intvalue: 1
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 2013039739}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 25
+      Intvalue: 1
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 2013039739}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 26
+      Intvalue: 1
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 2013039739}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 0
       Intvalue: 0.05
       open: 0
