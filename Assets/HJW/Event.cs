@@ -30,7 +30,8 @@ public enum Eventtype
     AudioRepeat,
     AudioNotRepeat,
     ShakeDisplay,
-    ChangeScene
+    ChangeScene,
+    Debug
 
 }
 [System.Serializable]
@@ -165,6 +166,9 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.ChangeScene:
                     SceneManager.LoadScene(events[eventidx].eventlist[i].OtherTextString);
+                    break;
+                case Eventtype.Debug:
+                    Debug.Log(1);
                     break;
             }
         }
