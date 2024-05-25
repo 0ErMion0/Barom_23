@@ -37,8 +37,4 @@ public class PlayerCtrl : MonoBehaviour
             }
         //}
     }
-
-    // item collect and get to the end (sucsses)
-
-    // 
 }

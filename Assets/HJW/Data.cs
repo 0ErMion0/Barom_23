@@ -8,7 +8,4 @@ public class Data : MonoBehaviour
     [TextArea]
     public string[] Texts;
     public AudioClip[] Audio;
-    public bool[] Fishlist;
-    public int Fished;
-    public int Chapter;
 }
