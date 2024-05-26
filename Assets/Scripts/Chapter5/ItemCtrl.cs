@@ -14,6 +14,10 @@ public class ItemCtrl : MonoBehaviour
 	public GameObject player;
 	GameObject director;
 
+	public AudioSource VFX;
+	public AudioClip getItemPositiveVFX;
+	public AudioClip getItemNegativeVFX;
+
 	[SerializeField]
 	private float fallSpeed;
 	// 그 아이템마다 스피드 다르게 하면 좋을듯. n이 더 빠르게 떨어지게.
@@ -80,21 +84,23 @@ public class ItemCtrl : MonoBehaviour
 		if (collision.gameObject.tag == "Player")
 		{
 			//print("충돌");
-			
-			// 충돌 판정
-			Destroy(gameObject);
 
 			// 충돌 시 n -> 생명 하나 감소
 			if (itemData.itemType == 0) //n
 			{
 				// 생명 감소 함수 호출
 				director.GetComponent<GameDirector>().DecreaseHp();
+				VFX.clip = getItemPositiveVFX;
 			}
 			else // 충돌 시 p -> 10개까지 채우면 클리어
 			{
 				// 아이템 점수 컨트롤 호출
 				director.GetComponent<GameDirector>().ItemCount();
+				VFX.clip = getItemNegativeVFX;
 			}
+
+			// 충돌 판정
+			Destroy(gameObject);
 		}
 	}
 }

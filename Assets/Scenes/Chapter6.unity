@@ -235,7 +235,7 @@ MonoBehaviour:
   FadeOutPannel: {fileID: 420585141}
   MainText: {fileID: 1456441144}
   shakeanim: {fileID: 0}
-  datamgr: {fileID: 1021430592}
+  datamgr: {fileID: 0}
   bubble: {fileID: 8300000, guid: 0e94895285bf351439daacb90d93666b, type: 3}
   events:
   - eventitle: Chapter 6 Start
@@ -2439,7 +2439,7 @@ Transform:
   - {fileID: 53803608}
   - {fileID: 1787672092}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568636265
 GameObject:
@@ -2603,6 +2603,7 @@ MonoBehaviour:
   alramslider: {fileID: 0}
   BGM: {fileID: 1292826442}
   VFX: {fileID: 138732779}
+  gamepause: 0
 --- !u!1 &596828466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,55 +4107,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016740038}
   m_CullTransparentMesh: 1
---- !u!1 &1021430591
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1021430593}
-  - component: {fileID: 1021430592}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1021430592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021430591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6217dca1b42d614fbea168e30f971af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Fishlist: 000000000000
-  Fished: 0
-  Chapter: 0
-  vfx: 0
-  bgm: 0
---- !u!4 &1021430593
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1021430591}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.046920016, y: 0.057442646, z: 75.00287}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027716180
 GameObject:
   m_ObjectHideFlags: 0
@@ -5972,7 +5924,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450241643
 GameObject:
@@ -6400,7 +6352,7 @@ RectTransform:
   - {fileID: 1345360909}
   - {fileID: 420585139}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8093,6 +8045,7 @@ MonoBehaviour:
   alramslider: {fileID: 0}
   BGM: {fileID: 995380631}
   VFX: {fileID: 2102522166}
+  gamepause: 0
 --- !u!1 &1967298076
 GameObject:
   m_ObjectHideFlags: 0
