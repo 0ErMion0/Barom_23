@@ -1115,7 +1115,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 488906840}
         m_TargetAssemblyTypeName: Sliderscript, Assembly-CSharp
         m_MethodName: tomain
         m_Mode: 1
@@ -10053,7 +10053,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1603756762
 Canvas:
   m_ObjectHideFlags: 0
