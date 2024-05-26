@@ -10,8 +10,9 @@ public class FishedDataManager : MonoBehaviour
     public FishedData fishedData = new FishedData();
     public bool[] Fishlist = new bool[6];
     public int Fished = 0;
-    public int Chapter = 0;
-
+    public int Chapter;
+    public float vfx = 1;
+    public float bgm = 1;
     private void Awake()
     {
         //Fishlist √ ±‚»≠

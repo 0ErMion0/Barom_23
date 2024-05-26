@@ -66,10 +66,32 @@ public class Event : MonoBehaviour
     public TextMeshProUGUI MainText;
     public Animation shakeanim;
     public FishedDataManager datamgr;
-    public FishedResult fishedResult;
+    public AudioClip bubble;
     [Space(50)]
     public Eventtt[] events;
     public static Event instance;
+    void OnEnable()
+    {
+        // 델리게이트 체인 추가
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        datamgr = GameObject.Find("FishedDataMng").GetComponent<FishedDataManager>();
+        if(datamgr.Chapter != 0)
+        {
+            VFX.clip = bubble;
+            VFX.Play();
+        }
+
+    }
+
+    void OnDisable()
+    {
+        // 델리게이트 체인 제거
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
     // Start is called before the first frame update
     private void Awake()
     {
@@ -136,12 +158,15 @@ public class Event : MonoBehaviour
                     events[eventidx].eventlist[i].Object.SetActive(false);
                     break;
                 case Eventtype.SetChapter:
+                    datamgr.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
                     datamgr.fishedData.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
                     break;
                 case Eventtype.EnableFishList:
+                    datamgr.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
                     datamgr.fishedData.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
                     break;
                 case Eventtype.Fished:
+                    datamgr.Fished++;
                     datamgr.fishedData.Fished++;
                     break;
                 case Eventtype.EndApp:
@@ -178,7 +203,7 @@ public class Event : MonoBehaviour
                     datamgr.LoadData();
                     break;
                 case Eventtype.ToResultScene:
-                    fishedResult.FishedResultt();
+                    datamgr.FishedResult();
                     break;
             }
         }
