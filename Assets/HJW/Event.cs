@@ -66,6 +66,7 @@ public class Event : MonoBehaviour
     public TextMeshProUGUI MainText;
     public Animation shakeanim;
     public FishedDataManager datamgr;
+    public FishedResult fishedResult;
     [Space(50)]
     public Eventtt[] events;
     public static Event instance;
@@ -177,7 +178,7 @@ public class Event : MonoBehaviour
                     datamgr.LoadData();
                     break;
                 case Eventtype.ToResultScene:
-                    datamgr.FishedResult();
+                    fishedResult.FishedResultt();
                     break;
             }
         }

@@ -86,28 +86,4 @@ public class FishedDataManager : MonoBehaviour
                 fishedData.Fished++;
         }
     }
-
-    public void FishedResult()
-    {
-        if (fishedData.Fished == 7)
-        {
-            //퍼펙트! 씬 변환으로 해야겠다
-            Debug.Log("퍼펙트");
-        }
-        else if (fishedData.Fished == 5 && fishedData.Fished == 6)
-        {
-            //굿엔딩
-            Debug.Log("굿 엔딩");
-        }
-        else if (fishedData.Fished == 3 && fishedData.Fished == 4)
-        {
-            //노멀엔딩
-            Debug.Log("노멀 앤딩");
-        }
-        else
-        {
-            //배드엔딩
-            Debug.Log("배드 엔딩");
-        }
-    }
 }
