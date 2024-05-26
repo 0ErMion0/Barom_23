@@ -2016,7 +2016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.23529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2601,8 +2601,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isalram: 0
   alramslider: {fileID: 0}
-  BGM: {fileID: 0}
-  VFX: {fileID: 0}
+  BGM: {fileID: 1292826442}
+  VFX: {fileID: 138732779}
 --- !u!1 &596828466
 GameObject:
   m_ObjectHideFlags: 0
@@ -8027,6 +8027,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1863507999}
+        m_TargetAssemblyTypeName: Sliderscript, Assembly-CSharp
+        m_MethodName: refresh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1863507997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8079,8 +8091,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isalram: 0
   alramslider: {fileID: 0}
-  BGM: {fileID: 0}
-  VFX: {fileID: 0}
+  BGM: {fileID: 995380631}
+  VFX: {fileID: 2102522166}
 --- !u!1 &1967298076
 GameObject:
   m_ObjectHideFlags: 0
