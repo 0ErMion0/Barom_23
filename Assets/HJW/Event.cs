@@ -66,6 +66,7 @@ public class Event : MonoBehaviour
     public TextMeshProUGUI MainText;
     public Animation shakeanim;
     public FishedDataManager datamgr;
+    public FishedResult fishedResult;
     public AudioClip bubble;
     [Space(50)]
     public Eventtt[] events;
@@ -79,7 +80,8 @@ public class Event : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         datamgr = GameObject.Find("FishedDataMng").GetComponent<FishedDataManager>();
-        if(datamgr.Chapter != 0)
+        
+        if (datamgr.Chapter != 0)
         {
             VFX.clip = bubble;
             VFX.Play();
@@ -203,7 +205,7 @@ public class Event : MonoBehaviour
                     datamgr.LoadData();
                     break;
                 case Eventtype.ToResultScene:
-                    datamgr.FishedResult();
+                    fishedResult.FishedResultt();
                     break;
             }
         }
