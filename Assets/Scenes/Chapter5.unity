@@ -4094,6 +4094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charTrans: {fileID: 0}
+  sliderscript: {fileID: 1628224990}
 --- !u!61 &1317763088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4753,13 +4754,6 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 1
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 11
       Intvalue: 0.05
       open: 1
@@ -4788,11 +4782,11 @@ MonoBehaviour:
       Object: {fileID: 414984178}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 11
-      Intvalue: 1
-      open: 1
+    - type: 1
+      Intvalue: 0.05
+      open: 0
       button: {fileID: 0}
-      Object: {fileID: 1622422546}
+      Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
   - eventitle: GameOver
@@ -4969,7 +4963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.23529412}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5232,6 +5226,7 @@ MonoBehaviour:
   alramslider: {fileID: 0}
   BGM: {fileID: 2109147113}
   VFX: {fileID: 306405646}
+  gamepause: 0
 --- !u!1 &1660631627
 GameObject:
   m_ObjectHideFlags: 0

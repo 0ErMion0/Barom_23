@@ -11,6 +11,8 @@ public class Sliderscript : MonoBehaviour
     public Slider BGM;
     public Slider VFX;
 
+    public bool gamepause;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,11 +27,13 @@ public class Sliderscript : MonoBehaviour
         VFX.value = Event.instance.datamgr.vfx;
         if(Event.instance.datamgr.Chapter == 5)
         {
+            gamepause = true;
             Time.timeScale = 0;
         }
     }
     public void resume()
     {
+        gamepause = false;
         Time.timeScale = 1;
     }
     public void BGMVolumchanege()
