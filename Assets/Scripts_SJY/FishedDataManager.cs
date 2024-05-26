@@ -10,9 +10,8 @@ public class FishedDataManager : MonoBehaviour
     public FishedData fishedData = new FishedData();
     public bool[] Fishlist = new bool[6];
     public int Fished = 0;
-    public int Chapter;
-    public float vfx = 1;
-    public float bgm = 1;
+    public int Chapter = 0;
+
     private void Awake()
     {
         //Fishlist 초기화
@@ -85,30 +84,6 @@ public class FishedDataManager : MonoBehaviour
         {
             if (fishedData.Fishlist[i] == true)
                 fishedData.Fished++;
-        }
-    }
-
-    public void FishedResult()
-    {
-        if (fishedData.Fished == 7)
-        {
-            //퍼펙트! 씬 변환으로 해야겠다
-            Debug.Log("퍼펙트");
-        }
-        else if (fishedData.Fished == 5 && fishedData.Fished == 6)
-        {
-            //굿엔딩
-            Debug.Log("굿 엔딩");
-        }
-        else if (fishedData.Fished == 3 && fishedData.Fished == 4)
-        {
-            //노멀엔딩
-            Debug.Log("노멀 앤딩");
-        }
-        else
-        {
-            //배드엔딩
-            Debug.Log("배드 엔딩");
         }
     }
 }

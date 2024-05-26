@@ -503,484 +503,12 @@ MonoBehaviour:
   MainText: {fileID: 1998950006}
   shakeanim: {fileID: 0}
   datamgr: {fileID: 0}
+  fishedResult: {fileID: 0}
   events:
-  - eventitle: FullButton_0
+  - eventitle: ToResult
     eventlist:
-    - type: 0
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
+    - type: 27
       Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1865200620}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 930813035}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 3
-      Intvalue: 0
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 4
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 883214734}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 2136375086}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1998950005}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 1
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1084329997}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 1
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: TextButton1_1
-    eventlist:
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1084329997}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 2
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1196012277}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: TextButton2_2
-    eventlist:
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1196012277}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 3
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 883214734}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 8
-      Intvalue: 0
-      open: 1
-      button: {fileID: 883214736}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: XTextButton3_3
-    eventlist:
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1030635233}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 3
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 883214734}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 8
-      Intvalue: 0
-      open: 1
-      button: {fileID: 883214736}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: GoodsListButton_4
-    eventlist:
-    - type: 0
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 883214734}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 10
-      Intvalue: 0
-      open: 1
-      button: {fileID: 883214736}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1998950005}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 2016418506}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 4
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 3
-      Intvalue: 1
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 1
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: TextButton4_5
-    eventlist:
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 2016418506}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 5
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 334375064}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1911476347}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1553830818}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: SelectButton1_6
-    eventlist:
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 334375064}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1998950005}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 0
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 143290975}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 1
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 143290975}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 2
-      Intvalue: 1
-      open: 0
-      button: {fileID: 143290975}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 428272173}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 2
-      Intvalue: 1
-      open: 0
-      button: {fileID: 143290975}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 6
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 592769037}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1998950005}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 6
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1269549297}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 6
-      open: 0
-      button: {fileID: 143290975}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-  - eventitle: TextButton5_7
-    eventlist:
-    - type: 0
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: Chapter5
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1269549297}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 428272173}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 1
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 592769037}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 24
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: Chapter5
-  - eventitle: TextButton6_8
-    eventlist:
-    - type: 0
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 904498199}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 24
-      Intvalue: 6
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: Chapter5
-  - eventitle: SelectButton2_9
-    eventlist:
-    - type: 11
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 334375064}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 2
-      Intvalue: 0.2
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1998950005}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 45105852}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 7
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 904498199}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 5
-      Intvalue: 7
       open: 0
       button: {fileID: 0}
       Object: {fileID: 0}
@@ -1068,7 +596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC810\uC2EC\uC2DC\uAC04"
+  m_text: Loading
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f72d3fb68c59f44599c1a4a73538397, type: 2}
   m_sharedMaterial: {fileID: -6154285847580132164, guid: 7f72d3fb68c59f44599c1a4a73538397, type: 2}
@@ -1256,7 +784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[CHAPTER 4]'
+  m_text: ToResultScene
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9803992da42e15a40a741e91a69d0dcf, type: 2}
   m_sharedMaterial: {fileID: 1043149234123840177, guid: 9803992da42e15a40a741e91a69d0dcf, type: 2}
@@ -3366,7 +2894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1501303225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3811,6 +3339,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1938516366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1938516368}
+  - component: {fileID: 1938516367}
+  m_Layer: 0
+  m_Name: FishedResult
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1938516367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938516366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8bf8763c54fb904aaedac57faaeca75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1938516368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938516366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 164.00293, y: 955.2689, z: -11.584187}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1976958467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,7 +3441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a857620d287bba84286d8c6993e8e30c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98c8509159f84ad4b83ab3c0433e895f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

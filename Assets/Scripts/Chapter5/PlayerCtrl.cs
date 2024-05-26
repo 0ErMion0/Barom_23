@@ -6,7 +6,6 @@ public class PlayerCtrl : MonoBehaviour
 {
     // move
     public Transform charTrans;
-    public Sliderscript sliderscript;
 
     float minPosX = -1.3f;
     float maxPosX = 1.3f;
@@ -23,10 +22,6 @@ public class PlayerCtrl : MonoBehaviour
 
     private void OnMove()
     {
-        if(sliderscript.gamepause)
-        {
-            return;
-        }
         //if (Application.platform == RuntimePlatform.Android)
         //{
             if(Input.touchCount > 0)

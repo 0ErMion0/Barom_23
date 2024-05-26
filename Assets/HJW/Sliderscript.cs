@@ -10,8 +10,11 @@ public class Sliderscript : MonoBehaviour
     public Slider alramslider;
     public Slider BGM;
     public Slider VFX;
-
-    public bool gamepause;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
@@ -21,30 +24,14 @@ public class Sliderscript : MonoBehaviour
             Event.instance.startcor(2);
         }
     }
-    public void refresh()
-    {
-        BGM.value = Event.instance.datamgr.bgm;
-        VFX.value = Event.instance.datamgr.vfx;
-        if(Event.instance.datamgr.Chapter == 5)
-        {
-            gamepause = true;
-            Time.timeScale = 0;
-        }
-    }
-    public void resume()
-    {
-        gamepause = false;
-        Time.timeScale = 1;
-    }
+
     public void BGMVolumchanege()
     {
         Event.instance.BGM.volume = BGM.value;
-        Event.instance.datamgr.bgm = BGM.value;
     }
     public void VFXVolumchanege()
     {
         Event.instance.VFX.volume = VFX.value;
-        Event.instance.datamgr.vfx = VFX.value;
     }
     public void tomain()
     {
