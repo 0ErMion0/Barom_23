@@ -33,6 +33,7 @@ public enum Eventtype
     ChangeScene,
     Savedata,
     Loaddata,
+    CalcFishnum,
     ToResultScene
 }
 
@@ -167,9 +168,9 @@ public class Event : MonoBehaviour
                     datamgr.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
                     datamgr.fishedData.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
                     break;
-                case Eventtype.Fished:
-                    datamgr.Fished++;
-                    datamgr.fishedData.Fished++;
+                //case Eventtype.Fished:
+                //    datamgr.Fished++;
+                //    datamgr.fishedData.Fished++;
                     break;
                 case Eventtype.EndApp:
                     Application.Quit();
@@ -203,6 +204,9 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.Loaddata:
                     datamgr.LoadData();
+                    break;
+                case Eventtype.CalcFishnum:
+                    datamgr.CalcFishNum();
                     break;
                 case Eventtype.ToResultScene:
                     fishedResult.FishedResultt();
