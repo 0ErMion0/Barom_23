@@ -2954,7 +2954,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2072950316}
         m_TargetAssemblyTypeName: Sliderscript, Assembly-CSharp
         m_MethodName: tomain
         m_Mode: 1
@@ -4443,7 +4443,7 @@ MonoBehaviour:
   shakeanim: {fileID: 1463640369}
   datamgr: {fileID: 0}
   fishedResult: {fileID: 0}
-  bubble: {fileID: 0}
+  bubble: {fileID: 8300000, guid: 0e94895285bf351439daacb90d93666b, type: 3}
   events:
   - eventitle: Chapter7start
     eventlist:
