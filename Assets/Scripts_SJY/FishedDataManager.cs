@@ -78,7 +78,7 @@ public class FishedDataManager : MonoBehaviour
     }
 
 
-    void CalcFishNum()
+    public void CalcFishNum()
     {
         //for문 돌려서 true 몇 개인지 Fished에 저장
         for (int i = 0; i < fishedData.Fishlist.Length; i++)
