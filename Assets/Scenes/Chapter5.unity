@@ -4015,6 +4015,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291178811}
   m_CullTransparentMesh: 1
+--- !u!1 &1316751661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1316751663}
+  - component: {fileID: 1316751662}
+  m_Layer: 0
+  m_Name: FishedDataMng
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1316751662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316751661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6217dca1b42d614fbea168e30f971af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fishlist: 000000000000
+  Fished: 0
+  Chapter: 0
+  vfx: 1
+  bgm: 1
+--- !u!4 &1316751663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316751661}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1317763084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4117,6 +4166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charTrans: {fileID: 0}
   sliderscript: {fileID: 1628224990}
+  data: {fileID: 1365154395}
+  VFX: {fileID: 990548817}
 --- !u!61 &1317763088
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4303,6 +4354,10 @@ MonoBehaviour:
   Texts: []
   Audio:
   - {fileID: 8300000, guid: 0e94895285bf351439daacb90d93666b, type: 3}
+  - {fileID: 8300000, guid: 778b4aac5e494894681c8b9e6d37a4a8, type: 3}
+  - {fileID: 8300000, guid: 4c8226b98a4e3b64299fb6cd5adbed2d, type: 3}
+  - {fileID: 8300000, guid: 1649082539b803f4796265cdb6e44476, type: 3}
+  - {fileID: 8300000, guid: 2e21b7b6da4d15b43b33cba41d66544c, type: 3}
 --- !u!1 &1383909619
 GameObject:
   m_ObjectHideFlags: 0
@@ -4764,7 +4819,8 @@ MonoBehaviour:
   FadeOutPannel: {fileID: 1622422548}
   MainText: {fileID: 0}
   shakeanim: {fileID: 0}
-  datamgr: {fileID: 0}
+  datamgr: {fileID: 1316751662}
+  fishedResult: {fileID: 0}
   bubble: {fileID: 8300000, guid: 0e94895285bf351439daacb90d93666b, type: 3}
   events:
   - eventitle: Chapter 5
@@ -4864,25 +4920,18 @@ MonoBehaviour:
       OtherTextString: Chapter6
   - eventitle: GameStart
     eventlist:
-    - type: 13
-      Intvalue: 0
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 9
-      Intvalue: 4
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1622422546}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 0
       Intvalue: 0.05
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 1490923339}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 1
+      Intvalue: 0.05
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1098574562}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 9
@@ -4921,13 +4970,6 @@ MonoBehaviour:
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 11
-      Intvalue: 4
-      open: 1
-      button: {fileID: 0}
-      Object: {fileID: 1098574562}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 1
       Intvalue: 4
       open: 1
       button: {fileID: 0}

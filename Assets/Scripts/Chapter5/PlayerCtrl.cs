@@ -11,9 +11,16 @@ public class PlayerCtrl : MonoBehaviour
     float minPosX = -1.3f;
     float maxPosX = 1.3f;
 
+    GameObject director;
+
+    public Data data;
+    public AudioSource VFX;
+
     private void Start()
     {
         charTrans = gameObject.transform;
+
+        director = GameObject.Find("GameDirector");
     }
 
     private void Update()
@@ -41,5 +48,33 @@ public class PlayerCtrl : MonoBehaviour
                 charTrans.position = new Vector3(clampedX, -4, 0);
             }
         //}
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Item")
+        {
+            //print("충돌");
+            ItemCtrl itemCtrl = collision.gameObject.GetComponent<ItemCtrl>();
+
+            // 충돌 시 n -> 생명 하나 감소
+            if (itemCtrl.ItemData.itemType == 0) //n
+            {
+                // 생명 감소 함수 호출
+                director.GetComponent<GameDirector>().DecreaseHp();
+                VFX.clip = data.Audio[2];
+                VFX.Play();
+            }
+            else // 충돌 시 p -> 10개까지 채우면 클리어
+            {
+                // 아이템 점수 컨트롤 호출
+                director.GetComponent<GameDirector>().ItemCount();
+                VFX.clip = data.Audio[1];
+                VFX.Play();
+            }
+
+            // 충돌 판정
+            Destroy(collision.gameObject);
+        }
     }
 }

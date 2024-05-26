@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class ItemCtrl : MonoBehaviour
 {
-	public enum ItemType
+    public enum ItemType
     {
-		Positive,
-		Negetive
+        Positive,
+        Negetive
     };
-	//public List<ItemData> ItemDatas = new List<ItemData>(); // 스크립터블 오브젝트
-	
-	public GameObject player;
-	GameObject director;
+    //public List<ItemData> ItemDatas = new List<ItemData>(); // 스크립터블 오브젝트
 
+    //public GameObject player;
+    //GameObject director;
+
+	public Data data;
 	public AudioSource VFX;
-	public AudioClip getItemPositiveVFX;
-	public AudioClip getItemNegativeVFX;
+	//public AudioClip getItemPositiveVFX;
+	//public AudioClip getItemNegativeVFX;
 
 	[SerializeField]
 	private float fallSpeed;
@@ -25,18 +26,17 @@ public class ItemCtrl : MonoBehaviour
 
 	[SerializeField]
 	ItemData itemData;
-	public ItemData ItemData { set { itemData = value; } }
+	public ItemData ItemData { get { return itemData; } set { itemData = value; } }
 
 	private void Start()
     {
 		//Debug.Log(itemData.ItemType);
 		//Debug.Log(itemData.Speed);
 
-		player = GameObject.FindGameObjectWithTag("Player");
+		//player = GameObject.FindGameObjectWithTag("Player");
 		fallSpeed = itemData.Speed;
 
-
-		director = GameObject.Find("GameDirector");
+		//director = GameObject.Find("GameDirector");
 	}
 
     void Update()
@@ -79,28 +79,30 @@ public class ItemCtrl : MonoBehaviour
 		//}
 	}
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-		if (collision.gameObject.tag == "Player")
-		{
-			//print("충돌");
+ //   private void OnTriggerEnter2D(Collider2D collision)
+ //   {
+	//	if (collision.gameObject.tag == "Player")
+	//	{
+	//		//print("충돌");
 
-			// 충돌 시 n -> 생명 하나 감소
-			if (itemData.itemType == 0) //n
-			{
-				// 생명 감소 함수 호출
-				director.GetComponent<GameDirector>().DecreaseHp();
-				VFX.clip = getItemPositiveVFX;
-			}
-			else // 충돌 시 p -> 10개까지 채우면 클리어
-			{
-				// 아이템 점수 컨트롤 호출
-				director.GetComponent<GameDirector>().ItemCount();
-				VFX.clip = getItemNegativeVFX;
-			}
+	//		// 충돌 시 n -> 생명 하나 감소
+	//		if (itemData.itemType == 0) //n
+	//		{
+	//			// 생명 감소 함수 호출
+	//			director.GetComponent<GameDirector>().DecreaseHp();
+	//			VFX.clip = data.Audio[1];
+	//			VFX.Play();
+	//		}
+	//		else // 충돌 시 p -> 10개까지 채우면 클리어
+	//		{
+	//			// 아이템 점수 컨트롤 호출
+	//			director.GetComponent<GameDirector>().ItemCount();
+	//			VFX.clip = data.Audio[2];
+	//			VFX.Play();
+	//		}
 
-			// 충돌 판정
-			Destroy(gameObject);
-		}
-	}
+	//		// 충돌 판정
+	//		Destroy(gameObject);
+	//	}
+	//}
 }

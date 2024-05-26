@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8047681661542762375}
   m_Layer: 6
   m_Name: item_folder
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3a58570c8abfc4184eba8816904a78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  data: {fileID: 0}
+  VFX: {fileID: 0}
   fallSpeed: 0
   itemData: {fileID: 11400000, guid: 83a5db8fd95bda24d87cbc9e38734b72, type: 2}
 --- !u!61 &2804805947920664681
