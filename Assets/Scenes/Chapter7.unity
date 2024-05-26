@@ -4442,6 +4442,7 @@ MonoBehaviour:
   MainText: {fileID: 1998950006}
   shakeanim: {fileID: 1463640369}
   datamgr: {fileID: 0}
+  fishedResult: {fileID: 0}
   bubble: {fileID: 0}
   events:
   - eventitle: Chapter7start
@@ -4736,6 +4737,13 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 24
+      Intvalue: 0
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Result1
   - eventitle: notfished
     eventlist:
     - type: 0
@@ -4766,6 +4774,13 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 24
+      Intvalue: 0
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Result1
 --- !u!4 &1994502202
 Transform:
   m_ObjectHideFlags: 0

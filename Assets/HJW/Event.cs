@@ -171,7 +171,7 @@ public class Event : MonoBehaviour
                 //case Eventtype.Fished:
                 //    datamgr.Fished++;
                 //    datamgr.fishedData.Fished++;
-                    break;
+                //    break;
                 case Eventtype.EndApp:
                     Application.Quit();
                     break;
