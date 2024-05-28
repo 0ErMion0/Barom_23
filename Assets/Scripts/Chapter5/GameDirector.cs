@@ -38,11 +38,12 @@ public class GameDirector : MonoBehaviour
 
     public GameObject gameObjects;
 
-    private void Start()
-    {
-        //StartCoroutine(TimeCtrl());
-        onGameStart.Invoke();
-    }
+    // 나중에 보글보글 추가해서 빼도 될듯
+    //private void Start()
+    //{
+    //    //StartCoroutine(TimeCtrl());
+    //    onGameStart.Invoke();
+    //}
 
     private void Update()
     {
