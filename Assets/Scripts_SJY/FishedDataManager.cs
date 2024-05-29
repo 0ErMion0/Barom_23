@@ -15,39 +15,35 @@ public class FishedDataManager : MonoBehaviour
     public float bgm = 1;
     private void Awake()
     {
-        var datas = GameObject.FindGameObjectsWithTag("data");
-        if (datas.Length > 1)
-        {
-            for (int i = 1; i < datas.Length; i++) 
-            {
-                Destroy(datas[i]);
-            }
-        }
-        DontDestroyOnLoad(datas[0]);
-        init();
-    }
-    public void init()
-    {
-        fishedData = new FishedData();
         //Fishlist ÃÊ±âÈ­
         for (int i = 0; i < fishedData.Fishlist.Length; i++)
         {
             fishedData.Fishlist[i] = false;
         }
-        fishedData.Fished = 0;
-        fishedData.Chapter = 0;
-        SaveData();
-        for (int i = 0; i < fishedData.Fishlist.Length; i++)
-        {
-            Fishlist[i] = fishedData.Fishlist[i];
-        }
-        Fished = fishedData.Fished;
-        Chapter = fishedData.Chapter;
+
+        DontDestroyOnLoad(gameObject);
+
+        fishedData = new FishedData();
+    }
+
+    // Start is called before the first frame update        
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
     public void SaveData()
     {
         string FishedDataFilePath = Application.persistentDataPath + "/MainGameData.json";
         string ToJsonData = JsonUtility.ToJson(fishedData, true);
+
+        Debug.Log(FishedDataFilePath);
+
         File.WriteAllText(FishedDataFilePath, ToJsonData);
     }
 

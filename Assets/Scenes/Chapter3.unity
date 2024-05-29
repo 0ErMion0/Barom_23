@@ -767,34 +767,6 @@ MonoBehaviour:
       Object: {fileID: 1998950005}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 5
-      Intvalue: 1
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 1
-      Intvalue: 0.05
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 13
-      Intvalue: 0
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 2
-      Intvalue: 1
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 9
       Intvalue: 0.05
       open: 1
@@ -814,6 +786,27 @@ MonoBehaviour:
       open: 1
       button: {fileID: 0}
       Object: {fileID: 1453159146}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 5
+      Intvalue: 1
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 13
+      Intvalue: 0
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 1
+      Intvalue: 0.05
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
   - eventitle: TalkButton1_1
@@ -871,7 +864,7 @@ MonoBehaviour:
     eventlist:
     - type: 11
       Intvalue: 0
-      open: 0
+      open: 1
       button: {fileID: 0}
       Object: {fileID: 1929195176}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
@@ -913,20 +906,6 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: TalkButton2_3
     eventlist:
-    - type: 18
-      Intvalue: 1
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
-    - type: 17
-      Intvalue: 4
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 13
       Intvalue: 1
       open: 0
@@ -1013,7 +992,7 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: TalkButton2_4
     eventlist:
-    - type: 0
+    - type: 1
       Intvalue: 0.05
       open: 0
       button: {fileID: 0}
@@ -1041,6 +1020,13 @@ MonoBehaviour:
       Object: {fileID: 1030635233}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 0
+      Intvalue: 0.05
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1985573563}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 16
       Intvalue: 4
       open: 0
@@ -1064,13 +1050,6 @@ MonoBehaviour:
       Object: {fileID: 1929195176}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
-    - type: 5
-      Intvalue: 5
-      open: 0
-      button: {fileID: 0}
-      Object: {fileID: 0}
-      Textcolor: {r: 0, g: 0, b: 0, a: 0}
-      OtherTextString: 
     - type: 9
       Intvalue: 0
       open: 1
@@ -1092,6 +1071,13 @@ MonoBehaviour:
       Object: {fileID: 45105852}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 5
+      Intvalue: 5
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
   - eventitle: SelectButton3_2
     eventlist:
     - type: 1
@@ -1099,6 +1085,13 @@ MonoBehaviour:
       open: 0
       button: {fileID: 0}
       Object: {fileID: 1929195176}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 0
+      Intvalue: 0.05
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1998950005}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 16
@@ -1754,11 +1747,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8739a608a9aa9b748adb097930d228db, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4174,10 +4167,10 @@ RectTransform:
   m_Father: {fileID: 1738204295}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2000, y: 3080}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673065005
 MonoBehaviour:
