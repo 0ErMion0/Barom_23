@@ -11736,7 +11736,7 @@ GameObject:
   - component: {fileID: 2064033204}
   m_Layer: 0
   m_Name: FishedDataMng
-  m_TagString: Untagged
+  m_TagString: data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

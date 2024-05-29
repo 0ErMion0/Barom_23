@@ -1197,6 +1197,20 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: SelectButton1_6
     eventlist:
+    - type: 18
+      Intvalue: 2
+      open: 0
+      button: {fileID: 143290975}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 17
+      Intvalue: 6
+      open: 0
+      button: {fileID: 143290975}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 11
       Intvalue: 0
       open: 1

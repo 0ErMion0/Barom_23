@@ -385,6 +385,20 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: 6-1 Notification btn
     eventlist:
+    - type: 18
+      Intvalue: 3
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1746803967}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 17
+      Intvalue: 0
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1746803967}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 3
       Intvalue: 2
       open: 0
@@ -772,6 +786,20 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: 6-2-1 Link click btn
     eventlist:
+    - type: 18
+      Intvalue: 4
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 68643202}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 17
+      Intvalue: 0
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 68643202}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 3
       Intvalue: 5
       open: 0

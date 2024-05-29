@@ -4792,7 +4792,7 @@ MonoBehaviour:
       OtherTextString: 
     - type: 11
       Intvalue: 0.05
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 1490923339}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
@@ -4806,21 +4806,21 @@ MonoBehaviour:
       OtherTextString: 
     - type: 9
       Intvalue: 0.05
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 1098574562}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 9
       Intvalue: 1
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 422083506}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 9
       Intvalue: 0.05
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 414984178}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
@@ -4836,14 +4836,14 @@ MonoBehaviour:
       OtherTextString: 
     - type: 11
       Intvalue: 0.05
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 1092813699}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 11
       Intvalue: 0.05
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 1383909619}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}

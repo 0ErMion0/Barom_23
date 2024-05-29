@@ -871,7 +871,7 @@ MonoBehaviour:
     eventlist:
     - type: 11
       Intvalue: 0
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 1929195176}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
@@ -913,6 +913,20 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: TalkButton2_3
     eventlist:
+    - type: 18
+      Intvalue: 1
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
+    - type: 17
+      Intvalue: 4
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 0}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 13
       Intvalue: 1
       open: 0

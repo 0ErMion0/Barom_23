@@ -783,7 +783,7 @@ MonoBehaviour:
     eventlist:
     - type: 24
       Intvalue: 0
-      open: 1
+      open: 0
       button: {fileID: 0}
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
@@ -4420,6 +4420,7 @@ GameObject:
   - component: {fileID: 1815715752}
   - component: {fileID: 1815715754}
   - component: {fileID: 1815715753}
+  - component: {fileID: 1815715755}
   m_Layer: 5
   m_Name: ToMain
   m_TagString: Untagged
@@ -4492,14 +4493,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 280665017}
-        m_TargetAssemblyTypeName: Event, Assembly-CSharp
-        m_MethodName: startcor
-        m_Mode: 3
+      - m_Target: {fileID: 1815715755}
+        m_TargetAssemblyTypeName: Sliderscript, Assembly-CSharp
+        m_MethodName: tomain
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4512,6 +4513,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815715751}
   m_CullTransparentMesh: 1
+--- !u!114 &1815715755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815715751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52d362eb635d09e4eb11e767f4dfe2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isalram: 0
+  alramslider: {fileID: 0}
+  BGM: {fileID: 0}
+  VFX: {fileID: 0}
+  gamepause: 0
 --- !u!1 &1865200620
 GameObject:
   m_ObjectHideFlags: 0
