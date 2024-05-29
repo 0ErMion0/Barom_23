@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class URL : MonoBehaviour
 {
@@ -27,7 +28,8 @@ public class URL : MonoBehaviour
 
     public void FishingList()
     {
-        Application.OpenURL("https://www.daum.net/");
+        //Application.OpenURL("https://www.daum.net/");
+        SceneManager.LoadScene("ShowFishedList");
     }
 
     public void Explain()

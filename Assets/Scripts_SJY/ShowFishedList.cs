@@ -11,10 +11,10 @@ public class ShowFishedList : MonoBehaviour
     public TextMeshProUGUI text;
 
 
-    private void Awake()
-    {
-        FishedText = GetComponentsInChildren<TextMeshProUGUI>();
-    }
+    //private void Awake()
+    //{
+    //    FishedText = GetComponents<TextMeshProUGUI>();
+    //}
     // Start is called before the first frame update
     void Start()
     {
