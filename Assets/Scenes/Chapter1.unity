@@ -1525,11 +1525,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3a1d888492db50f4496eaf80d364d0c7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8800,6 +8800,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 53893b7a21cf13640b86992b0c550d7b, type: 3}
   - {fileID: 8300000, guid: 6947b85d40c97044f9b8b26e22905ca1, type: 3}
   - {fileID: 8300000, guid: 0e94895285bf351439daacb90d93666b, type: 3}
+  - {fileID: 8300000, guid: ca01b3066e34e6a4da0ec6f4736b1fca, type: 3}
 --- !u!4 &1190128284
 Transform:
   m_ObjectHideFlags: 0
@@ -10318,10 +10319,10 @@ RectTransform:
   m_Father: {fileID: 1253044217}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 2000, y: 3080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673065005
 MonoBehaviour:
@@ -11150,6 +11151,13 @@ MonoBehaviour:
       Object: {fileID: 2013039739}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 12
+      Intvalue: 6
+      open: 1
+      button: {fileID: 0}
+      Object: {fileID: 499832237}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 16
       Intvalue: 1
       open: 0
@@ -11728,7 +11736,7 @@ GameObject:
   - component: {fileID: 2064033204}
   m_Layer: 0
   m_Name: FishedDataMng
-  m_TagString: Untagged
+  m_TagString: data
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

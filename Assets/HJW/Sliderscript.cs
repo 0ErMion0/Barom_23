@@ -48,6 +48,8 @@ public class Sliderscript : MonoBehaviour
     }
     public void tomain()
     {
+        Event.instance.datamgr.init();
+        Time.timeScale = 1;
         SceneManager.LoadScene("Chapter1");
     }
 }
