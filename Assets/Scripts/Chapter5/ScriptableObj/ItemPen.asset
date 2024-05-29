@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 043e2a631cd500c45b1c1a0220d83d0a, type: 3}
+  m_Name: ItemPen
+  m_EditorClassIdentifier: 
+  itemName: Pen
+  itemType: 1
+  itemPrefeb: {fileID: 1810148034487387154, guid: 6296fbe88e21e824ebae167a4461d674, type: 3}
+  speed: 2.5
