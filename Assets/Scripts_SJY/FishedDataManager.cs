@@ -8,7 +8,7 @@ public class FishedDataManager : MonoBehaviour
 {
 
     public FishedData fishedData = new FishedData();
-    public bool[] Fishlist = new bool[6];
+    public bool[] Fishlist = new bool[5];
     public int Fished = 0;
     public int Chapter;
     public float vfx = 1;

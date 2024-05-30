@@ -780,7 +780,7 @@ MonoBehaviour:
   - eventitle: 6-2-1 Link click btn
     eventlist:
     - type: 18
-      Intvalue: 4
+      Intvalue: 3
       open: 0
       button: {fileID: 0}
       Object: {fileID: 68643202}

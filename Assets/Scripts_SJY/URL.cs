@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class URL : MonoBehaviour
 {
-    private const string subject = "즐거운 피지컬 코딩과 메이커 교육앱 후르츠 루프! 지금 시작해 보세요";
+    private const string subject = "평범한 회사원 김첨지가 되어 수많은 피싱 위협으로 부터 도망쳐라!";
     private const string body = "https://play.google.com/store/apps/details?id=com.CEREALLAB.FruitsLoop&showAllReviews=true";
 
     public void Share()
@@ -15,7 +16,6 @@ public class URL : MonoBehaviour
 			intentObject.Call<AndroidJavaObject>("setAction", intentObject.GetStatic<string>("ACTION_SEND"));
 			intentObject.Call<AndroidJavaObject>("setType", "text/plain");
 			intentObject.Call<AndroidJavaObject>("putExtra", intentObject.GetStatic<string>("EXTRA_SUBJECT"), subject);
-			intentObject.Call<AndroidJavaObject>("putExtra", intentObject.GetStatic<string>("EXTRA_TEXT"), body);
 			using (AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
 			using (AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity")) 
 			using (AndroidJavaObject jChooser = intentClass.CallStatic<AndroidJavaObject>("createChooser", intentObject, "Share Via"))
@@ -27,11 +27,12 @@ public class URL : MonoBehaviour
 
     public void FishingList()
     {
-        Application.OpenURL("https://www.daum.net/");
+        //Application.OpenURL("https://www.daum.net/");
+        SceneManager.LoadScene("ShowFishedList");
     }
 
     public void Explain()
     {
-        Application.OpenURL("https://www.google.com/");
+        Application.OpenURL("https://www.notion.so/804e558a942c4380be2dfcb243b91e5f?pvs=4");
     }
 }

@@ -167,6 +167,12 @@ public class Event : MonoBehaviour
                 case Eventtype.EnableFishList:
                     datamgr.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
                     datamgr.fishedData.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
+                    Debug.Log("Enable ½ÇÇà");
+                    Debug.Log(datamgr.Fishlist.Length);
+                    for (int j = 0; j < datamgr.Fishlist.Length; j++)
+                    {
+                        Debug.Log(datamgr.Fishlist[j]);
+                    }
                     break;
                 //case Eventtype.Fished:
                 //    datamgr.Fished++;
