@@ -34,6 +34,6 @@ public class URL : MonoBehaviour
 
     public void Explain()
     {
-        Application.OpenURL("https://www.google.com/");
+        Application.OpenURL("https://www.notion.so/804e558a942c4380be2dfcb243b91e5f?pvs=4");
     }
 }
