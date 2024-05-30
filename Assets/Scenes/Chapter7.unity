@@ -4731,7 +4731,7 @@ MonoBehaviour:
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
     - type: 18
-      Intvalue: 5
+      Intvalue: 4
       open: 0
       button: {fileID: 0}
       Object: {fileID: 0}

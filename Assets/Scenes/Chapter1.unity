@@ -11753,7 +11753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6217dca1b42d614fbea168e30f971af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fishlist: 000000000000
+  Fishlist: 0000000000
   Fished: 0
   Chapter: 0
   vfx: 1
