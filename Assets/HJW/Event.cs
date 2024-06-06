@@ -81,7 +81,8 @@ public class Event : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         datamgr = GameObject.Find("FishedDataMng").GetComponent<FishedDataManager>();
-        
+        BGM.volume = datamgr.bgm;
+        VFX.volume = datamgr.vfx;
         if (datamgr.Chapter != 0)
         {
             VFX.clip = bubble;
