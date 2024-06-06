@@ -34,9 +34,9 @@ public class PlayerCtrl : MonoBehaviour
         {
             return;
         }
-        //if (Application.platform == RuntimePlatform.Android)
-        //{
-            if(Input.touchCount > 0)
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0); // 첫번째 터치만 처리  // 터치가 발생한 화면 좌표를 월드 좌표로 변환
                 Vector3 touchPos = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
@@ -47,7 +47,40 @@ public class PlayerCtrl : MonoBehaviour
                 // 캐릭터를 이동
                 charTrans.position = new Vector3(clampedX, -4, 0);
             }
+        }
+        //else
+        //{
+        //    // 마우스의 현재 위치를 가져옴
+        //    Vector3 mousePosition = Input.mousePosition;
+        //    mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        //    // 플레이어 오브젝트의 새로운 위치 설정
+        //    Vector3 targetPosition = new Vector3(mousePosition.x, transform.position.y, transform.position.z);
+
+        //    // 플레이어 오브젝트가 화면 경계를 넘지 않도록 설정
+        //    targetPosition.x = Mathf.Clamp(targetPosition.x, minPosX, maxPosX);
+
+        //    // 플레이어 오브젝트를 타겟 위치로 이동
+        //    charTrans.position = new Vector3(targetPosition.x, -4, 0);
+        //        //Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
         //}
+    }
+
+    private void OnMouseDrag()
+    {
+        // 마우스의 현재 위치를 가져옴
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        // 플레이어 오브젝트의 새로운 위치 설정
+        Vector3 targetPosition = new Vector3(mousePosition.x, transform.position.y, transform.position.z);
+
+        // 플레이어 오브젝트가 화면 경계를 넘지 않도록 설정
+        targetPosition.x = Mathf.Clamp(targetPosition.x, minPosX, maxPosX);
+
+        // 플레이어 오브젝트를 타겟 위치로 이동
+        charTrans.position = new Vector3(targetPosition.x, -4, 0);
+        //Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
