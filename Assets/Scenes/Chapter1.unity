@@ -6685,6 +6685,7 @@ MonoBehaviour:
   cammove: {fileID: 1463640369}
   nameanim: {fileID: 1743107874}
   settings: {fileID: 488906835}
+  to1: {fileID: 1112349293}
   settingspannel: {fileID: 1859657012}
   initpannel: {fileID: 669106708}
   arrow: {fileID: 1482317456}
@@ -12621,6 +12622,13 @@ MonoBehaviour:
       OtherTextString: 
   - eventitle: Closet
     eventlist:
+    - type: 9
+      Intvalue: 0.05
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1307222780}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
     - type: 0
       Intvalue: 0.05
       open: 0
@@ -12677,6 +12685,13 @@ MonoBehaviour:
       Object: {fileID: 0}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 11
+      Intvalue: 0.05
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1307222780}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: 
   - eventitle: Door
     eventlist:
     - type: 10
@@ -12686,6 +12701,13 @@ MonoBehaviour:
       Object: {fileID: 209817653}
       Textcolor: {r: 0, g: 0, b: 0, a: 0}
       OtherTextString: 
+    - type: 9
+      Intvalue: 2
+      open: 0
+      button: {fileID: 0}
+      Object: {fileID: 1307222780}
+      Textcolor: {r: 0, g: 0, b: 0, a: 0}
+      OtherTextString: Chapter2
     - type: 0
       Intvalue: 0.05
       open: 0

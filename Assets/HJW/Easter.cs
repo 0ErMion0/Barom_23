@@ -24,6 +24,7 @@ public class Easter : MonoBehaviour
     public Animation cammove;
     public Animation nameanim;
     public GameObject settings;
+    public GameObject to1;
     public GameObject settingspannel;
     public GameObject initpannel;
     public GameObject arrow;
@@ -40,6 +41,7 @@ public class Easter : MonoBehaviour
             {
                 StartCoroutine(eventstart());
                 settings.SetActive(false);
+                to1.SetActive(false);
                 settingspannel.SetActive(false);
                 touched = 0;
                 return;
@@ -55,6 +57,7 @@ public class Easter : MonoBehaviour
         fadeinout.Play();
         initpannel.SetActive(false);
         settings.SetActive(true);
+        to1.SetActive(true);
         arrow.SetActive(false);
         chumziname.SetActive(false );
         text.SetActive(false );

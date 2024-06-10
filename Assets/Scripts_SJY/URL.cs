@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class URL : MonoBehaviour
 {
     private const string subject = "평범한 회사원 김첨지가 되어 수많은 피싱 위협으로 부터 도망쳐라!";
-    private const string body = "https://play.google.com/store/apps/details?id=com.CEREALLAB.FruitsLoop&showAllReviews=true";
+    private const string body = "https://play.google.com/store/apps/details?id=com.shellwegame.aluckyday";
 
     public void Share()
     {
@@ -16,14 +16,15 @@ public class URL : MonoBehaviour
 			intentObject.Call<AndroidJavaObject>("setAction", intentObject.GetStatic<string>("ACTION_SEND"));
 			intentObject.Call<AndroidJavaObject>("setType", "text/plain");
 			intentObject.Call<AndroidJavaObject>("putExtra", intentObject.GetStatic<string>("EXTRA_SUBJECT"), subject);
+			intentObject.Call<AndroidJavaObject>("putExtra", intentObject.GetStatic<string>("EXTRA_TEXT"), body);
 			using (AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
 			using (AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity")) 
 			using (AndroidJavaObject jChooser = intentClass.CallStatic<AndroidJavaObject>("createChooser", intentObject, "Share Via"))
 			currentActivity.Call("startActivity", jChooser);
 		}
 #endif
-
     }
+
 
     public void FishingList()
     {
