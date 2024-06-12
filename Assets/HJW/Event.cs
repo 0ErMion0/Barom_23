@@ -183,7 +183,8 @@ public class Event : MonoBehaviour
                     Application.Quit();
                     break;
                 case Eventtype.VIberate:
-                    Handheld.Vibrate();
+                    //if(Application.platform==RuntimePlatform.Android)
+                       // Handheld.Vibrate(); 
                     break;
                 case Eventtype.ChangeOtherText:
                     events[eventidx].eventlist[i].Object.GetComponent<TextMeshProUGUI>().text = events[eventidx].eventlist[i].OtherTextString;
