@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Eventtype
@@ -25,9 +26,17 @@ public enum Eventtype
     Fished,
     EnableFishList,
     VIberate,
-    EndApp
-
+    EndApp,
+    AudioRepeat,
+    AudioNotRepeat,
+    ShakeDisplay,
+    ChangeScene,
+    Savedata,
+    Loaddata,
+    CalcFishnum,
+    ToResultScene
 }
+
 [System.Serializable]
 public class Eventt
 {
@@ -56,9 +65,37 @@ public class Event : MonoBehaviour
     public Image MainImagepannel;
     public Image FadeOutPannel;
     public TextMeshProUGUI MainText;
+    public Animation shakeanim;
+    public FishedDataManager datamgr;
+    public FishedResult fishedResult;
+    public AudioClip bubble;
     [Space(50)]
     public Eventtt[] events;
     public static Event instance;
+    void OnEnable()
+    {
+        // 델리게이트 체인 추가
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        datamgr = GameObject.Find("FishedDataMng").GetComponent<FishedDataManager>();
+        BGM.volume = datamgr.bgm;
+        VFX.volume = datamgr.vfx;
+        if (datamgr.Chapter != 0)
+        {
+            VFX.clip = bubble;
+            VFX.Play();
+        }
+
+    }
+
+    void OnDisable()
+    {
+        // 델리게이트 체인 제거
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
     // Start is called before the first frame update
     private void Awake()
     {
@@ -125,19 +162,29 @@ public class Event : MonoBehaviour
                     events[eventidx].eventlist[i].Object.SetActive(false);
                     break;
                 case Eventtype.SetChapter:
-                    data.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
+                    datamgr.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
+                    datamgr.fishedData.Chapter = (int)events[eventidx].eventlist[i].Intvalue;
                     break;
                 case Eventtype.EnableFishList:
-                    data.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
+                    datamgr.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
+                    datamgr.fishedData.Fishlist[(int)events[eventidx].eventlist[i].Intvalue] = true;
+                    Debug.Log("Enable 실행");
+                    Debug.Log(datamgr.Fishlist.Length);
+                    for (int j = 0; j < datamgr.Fishlist.Length; j++)
+                    {
+                        Debug.Log(datamgr.Fishlist[j]);
+                    }
                     break;
-                case Eventtype.Fished:
-                    data.Fished++;
-                    break;
+                //case Eventtype.Fished:
+                //    datamgr.Fished++;
+                //    datamgr.fishedData.Fished++;
+                //    break;
                 case Eventtype.EndApp:
                     Application.Quit();
                     break;
                 case Eventtype.VIberate:
-                    Handheld.Vibrate();
+                    //if(Application.platform==RuntimePlatform.Android)
+                       // Handheld.Vibrate(); 
                     break;
                 case Eventtype.ChangeOtherText:
                     events[eventidx].eventlist[i].Object.GetComponent<TextMeshProUGUI>().text = events[eventidx].eventlist[i].OtherTextString;
@@ -147,6 +194,30 @@ public class Event : MonoBehaviour
                     break;
                 case Eventtype.ChangeTextColor:
                     MainText.color = events[eventidx].eventlist[i].Textcolor;
+                    break;
+                case Eventtype.AudioRepeat:
+                    VFX.loop = true;
+                    break;
+                case Eventtype.AudioNotRepeat:
+                    VFX.loop = false;
+                    break;
+                case Eventtype.ShakeDisplay:
+                    shakeanim.Play();
+                    break;
+                case Eventtype.ChangeScene:
+                    SceneManager.LoadScene(events[eventidx].eventlist[i].OtherTextString);
+                    break;
+                case Eventtype.Savedata:
+                    datamgr.SaveData();
+                    break;
+                case Eventtype.Loaddata:
+                    datamgr.LoadData();
+                    break;
+                case Eventtype.CalcFishnum:
+                    datamgr.CalcFishNum();
+                    break;
+                case Eventtype.ToResultScene:
+                    fishedResult.FishedResultt();
                     break;
             }
         }
